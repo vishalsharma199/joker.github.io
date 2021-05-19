@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>joker</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo,png" alt=""></a>
+        <div class="toggle"><img src="toggle.png" alt=""></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2>Put on a <span>Happy</span> face</h2>
+            <p>Joker is a 2019 American psychological thriller film <br> directed and produced by Todd Phillips, who co-wrote <br> the screenplay with Scott Silver. The film, based on <br>DC Comics characters,  stars Joaquin Phoenix as the Joker and <br>provides an  alternative origin story for the character.</p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">Watch Trailer</a>
+            <div class="slide"></div>
+            <ul class="sci">
+                <li><a href="#"><img src="facebook.png" alt=""></a></li>
+                <li><a href="#"><img src="twitter.png" alt=""></a></li>
+                <li><a href="#"><img src="instagram.png" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="trailer.mov" controls="true"></video>
+        <img src="close.png" class="close"onclick="toggle();">
+    </div>
+    <script type="text/javascript">
+    function toggle(){
+        var trailer = document.querySelector('.trailer');
+        trailer.classList.toggle('active')
+    }
+    </script>
+</body>
+</html>
